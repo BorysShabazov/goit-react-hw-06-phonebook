@@ -1,5 +1,4 @@
 import styles from './phoneBook.module.css';
-import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { addContact } from 'components/redux/contactsSlice';
 
@@ -45,8 +44,4 @@ export const PhoneBook = () => {
       <button type="submit">Add contact</button>
     </form>
   );
-};
-
-PhoneBook.propTypes = {
-  onInput: PropTypes.func,
 };

@@ -1,6 +1,5 @@
 import { filteringContacts } from 'components/redux/filterSlice';
 import { getFilter } from 'components/redux/selectos';
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 
 export const Filter = () => {
@@ -18,9 +17,4 @@ export const Filter = () => {
       <input type="text" value={filter} onChange={handlFilteringContacts} />
     </label>
   );
-};
-
-Filter.propTypes = {
-  value: PropTypes.string,
-  onChange: PropTypes.func,
 };

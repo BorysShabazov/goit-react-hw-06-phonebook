@@ -1,5 +1,4 @@
 import styles from './Contacts.module.css';
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts, getFilter } from 'components/redux/selectos';
 import { deleteContact } from 'components/redux/contactsSlice';
@@ -43,9 +42,4 @@ export const Contacts = ({ children }) => {
       </ul>
     </>
   );
-};
-
-Contacts.propTypes = {
-  contacts: PropTypes.array,
-  deleteContact: PropTypes.func,
 };
